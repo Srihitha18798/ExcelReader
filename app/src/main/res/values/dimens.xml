@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dimen_0">0dp</dimen>
+    <dimen name="dimen_05">0.5dp</dimen>
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_48">48dp</dimen>
+
+    <!--Army!!! Don't use static 5dp and 10dp, Always try to use the margin_8  and margin_16 -->
+
+    <dimen name="text_header_regular">24sp</dimen>
+    <dimen name="text_header_medium">20sp</dimen>
+    <dimen name="text_body">16sp</dimen>
+    <dimen name="text_body2">14sp</dimen>
+    <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_overline">10sp</dimen>
+
+    <!--Army!!! Please add more dimens below-->
+
+</resources>

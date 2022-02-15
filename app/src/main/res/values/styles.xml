@@ -1,0 +1,49 @@
+<resources>
+<style name="full_screen_dialog">
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    <item name="android:background">@android:color/transparent</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+</style>
+    <style name="tvStyleBold">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTransparentWhite</item>
+        <item name="android:textSize">@dimen/text_body</item>
+    </style>
+
+    <style name="tvStyleRegular">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textSize">@dimen/text_body</item>
+
+    </style>
+    <style name="edtStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="background">@drawable/edit_text_selected</item>
+        <item name="android:background">@drawable/edit_text_selected</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+    <style name="button">
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="btnStyle">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+</resources>
+

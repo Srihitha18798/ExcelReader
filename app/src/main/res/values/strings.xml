@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ExcellReader</string>
+    <string name="with_poi_lib">Open With Apache POI</string>
+    <string name="welcome_text">Welcome Excel Reader</string>
+    <string name="or_tag">OR</string>
+    <string name="submit_button">Go</string>
+    <string name="no_data_found">No data found</string>
+    <string name="open_file">Open File</string>
+    <string name="scan_button">Scan Button</string>
+    <string name="fab_descr">Open File</string>
+    <string name="submit">Submit</string>
+    <string name="paste_url_here">Paste URL or Scan</string>
+
+</resources>

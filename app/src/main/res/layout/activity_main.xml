@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorTransparentWhite">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textview_bg"
+        android:hint="@string/paste_url_here" />
+
+
+    <ImageButton
+        android:id="@+id/qrCode_Scan"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="7dp"
+        android:layout_toEndOf="@+id/editText"
+        android:accessibilityPaneTitle="Scan QR Code"
+        android:background="@drawable/textview_bg"
+        android:contentDescription="@string/scan_button"
+        android:src="@drawable/ic_scan"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <ImageButton
+        android:id="@+id/submit_button"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/qrCode_Scan"
+        android:background="@drawable/textview_bg"
+        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:text="@string/submit_button"
+        android:textColor="@color/colorWhite" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="4dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/submit_button"
+        tools:listitem="@layout/custom_layout"
+        />
+
+
+    <include
+        android:id="@+id/llNoDataFound"
+        layout="@layout/layout_nodatafound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/selectFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="26dp"
+        android:contentDescription="@string/fab_descr"
+        android:src="@drawable/ic_baseline_add_24" />
+
+
+    <Button
+        android:id="@+id/files"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="292dp"
+        android:hint="Recent"
+        android:layout_marginBottom="29dp"></Button>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</RelativeLayout>
