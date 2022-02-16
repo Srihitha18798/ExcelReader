@@ -178,7 +178,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
     private fun openDocument() {
         val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
             type = "*/*"
@@ -293,6 +292,7 @@ class MainActivity : AppCompatActivity() {
             startDownload(url)
         }
     }
+
     private fun checkForStoragePermission() {
         if (ContextCompat.checkSelfPermission(
                 this@MainActivity,

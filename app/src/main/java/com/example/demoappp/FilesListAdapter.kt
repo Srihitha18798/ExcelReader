@@ -40,20 +40,21 @@ class FilesListAdapter(private val context: Context) :
 
         }
         holder.itemView.ivDelete.setOnClickListener {
-            Log.e("delete","button clicked")
+            Log.e("delete", "button clicked")
             deleteSelectedFile(currentItem.path)
         }
     }
 
-    private fun deleteSelectedFile(filePath:String){
+    private fun deleteSelectedFile(filePath: String) {
         val file = File(filePath)
-        if(file.exists()){
+        if (file.exists()) {
             file.delete()
         }
         if (context is FilesList) {
             context.getFiles()
         }
     }
+
     private fun openFile(path: String) {
         val intent = Intent(context, MainActivity::class.java)
         intent.putExtra("excellPath", path)

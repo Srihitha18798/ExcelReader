@@ -11,6 +11,6 @@ data class SingleRow(
 )
 
 data class ExcellFile(
-        var name: String,
-        var path:String
+    var name: String,
+    var path: String
 )

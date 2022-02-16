@@ -21,7 +21,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DemoAppp"
         tools:ignore="ExtraText">
-        <activity android:name=".SplashActivity"
+        <activity
+            android:name=".SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,7 +39,7 @@
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
             android:screenOrientation="fullSensor"
             tools:replace="screenOrientation" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

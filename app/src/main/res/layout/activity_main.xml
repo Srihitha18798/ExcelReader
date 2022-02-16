@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/colorTransparentWhite">
+    android:background="@color/colorTransparentWhite"
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/editText"
@@ -50,28 +50,27 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/submit_button"
+        android:layout_marginTop="15dp"
         android:clipToPadding="false"
         android:padding="4dp"
-        android:layout_marginTop="15dp"
-        android:layout_below="@id/submit_button"
-        tools:listitem="@layout/custom_layout"
-        />
+        tools:listitem="@layout/custom_layout" />
 
 
     <include
         android:id="@+id/llNoDataFound"
         layout="@layout/layout_nodatafound"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/selectFile"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="17dp"
@@ -89,8 +88,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="292dp"
-        android:hint="Recent"
-        android:layout_marginBottom="29dp"></Button>
+        android:layout_marginBottom="29dp"
+        android:hint="@string/recent" />
 
     <ProgressBar
         android:id="@+id/progressBar"
